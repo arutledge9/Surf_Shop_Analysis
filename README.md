@@ -20,7 +20,7 @@ and from December
 show that: 
 - while both sets only deviate from their mean temperatures by 3-4 degrees on average, the lowest recorded temperatures in December are 8 whole degrees lower than they are in June,
 - the average and median temperatures in June (75) are more comfortable than their December counterparts (71),
-- and that while the heat in days from both sets don't deviate much from their average temperatures, those in the month of December do so by slightly half a degree more than the days in June - meaning more temperature fluctuation when we want to be out on our boards. 
+- and that while the heat in days from both sets don't deviate much from their average temperatures, those in the month of December do so by slightly half a degree more than the days in June - meaning more temperature fluctuation in the winter when we want to be out on our boards. 
 
 ## Summary
 - a statistically significant amount of temperature observations from which we can base our conclusions,
