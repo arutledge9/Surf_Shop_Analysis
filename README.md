@@ -28,7 +28,7 @@ We were able to run our temperature analysis from a statistically significant am
 
 Further analysis into precipitation specific to these months would also be enlightening - is either June or December a very wet month? If, say, December is, perhaps December could simply be earmarked each year for closing for inventory, shop repairs, maintenance, and business plan review. Changing our code base to run this analysis would be simple, as we would only need to change from observing temperatures to observing precipitation. December, for example, would look like the following:
 
-dec_results = session.query(Measurement.prcp, Measurement.date).\
+dec_results = session.query(Measurement.prcp, Measurement.date).\\
 filter(func.strftime("%m", Measurement.date) == "12").all()
 
 Another avenue of exploration would be more recent years of data. With the rapidly changing climate, observing weather data from 2010-2016 might not be the best timeframe from which to 
