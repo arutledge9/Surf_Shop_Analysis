@@ -31,4 +31,10 @@ Further analysis into precipitation specific to these months would also be enlig
 dec_results = session.query(Measurement.prcp, Measurement.date).\\
 filter(func.strftime("%m", Measurement.date) == "12").all()
 
-Another avenue of exploration would be more recent years of data. With the rapidly changing climate, observing weather data from 2010-2016 might not be the best timeframe from which to 
+Another avenue of exploration would be more recent years of data. With the rapidly changing climate, observing weather data from 2010-2016 might not be the best timeframe from which to draw conclusions. Filtering our June data, for example, to look at the most recent year in our data set (2016) would look like the following: 
+
+june_results = session.query(Measurement.tobs, Measurement.date).\\
+filter(func.strftime("%m", Measurement.date) == "06").\\
+filter(func.strftime("%Y", Measurement.date) == "2016").all()
+
+and I also suspect W. Avy and I could obtain more recent data for a better analysis. 
