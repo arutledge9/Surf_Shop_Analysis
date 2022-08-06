@@ -23,5 +23,12 @@ show that:
 - and that while the heat in days from both sets don't deviate much from their average temperatures, those in the month of December do so by slightly half a degree more than the days in June - meaning more temperature fluctuation in the winter when we want to be out on our boards. 
 
 ## Summary
-- a statistically significant amount of temperature observations from which we can base our conclusions,
-- a remarkable similarity between their own respective mean and median temperature measurements,
+
+We were able to run our temperature analysis from a statistically significant amount of temperature observations from which we can base our conclusions. While we've observed a notable difference in temperature results between the months of June and December, there exists a remarkable similarity between their own respective mean and median temperature measurements, suggesting few outlier days - and indeed, none to my eye are seen in the summary statistics we created. At the end of the day, W. Avy and I will need to carefully consider whether a surf and ice cream shop can survive over the winter months when temperatures *will* dip into the 50s, despite a low 70s average.
+
+Further analysis into precipitation specific to these months would also be enlightening - is either June or December a very wet month? If, say, December is, perhaps December could simply be earmarked each year for closing for inventory, shop repairs, maintenance, and business plan review. Changing our code base to run this analysis would be simple, as we would only need to change from observing temperatures to observing precipitation. December, for example, would look like the following:
+
+dec_results = session.query(Measurement.prcp, Measurement.date).\
+filter(func.strftime("%m", Measurement.date) == "12").all()
+
+Another avenue of exploration would be more recent years of data. With the rapidly changing climate, observing weather data from 2010-2016 might not be the best timeframe from which to 
