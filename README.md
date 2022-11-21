@@ -1,4 +1,4 @@
-# surfs_up
+# Surf_Shop_Analysis
 Module 9 coursework w/ python, sqlite, flask
 
 
